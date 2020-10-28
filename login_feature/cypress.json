@@ -1,0 +1,15 @@
+{
+  "projectId": "rhimym",
+  "baseUrl": "<some_url>",
+  "testFiles": "**/*.{feature,features}",
+  "video": false,
+  "fileServerFolder": "./cypress",
+  "fixturesFolder": "./cypress/fixtures",
+  "integrationFolder": "./cypress/integration",
+  "pluginsFile": "./cypress/plugins/index.js",
+  "screenshotsFolder": "./cypress/screenshots",
+  "supportFile": "./cypress/support/index.js",
+  "commandsFile": "./cypress/support/commands/*.js",
+  "videosFolder": "./cypress/videos",
+  "ignoreTestFiles": "*.js"
+}

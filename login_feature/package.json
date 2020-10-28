@@ -1,0 +1,31 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "My login tests",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "node_modules/.bin/cypress open",
+    "cypress-clean-reports": "rm -rf cypress/reports/*",
+    "cypress-e2e-chrome-all": "node_modules/.bin/cypress run --headless --browser chrome",
+    "e2e-electron-all": "node_modules/.bin/cypress run --headless --browser electron",
+    "generate-report": "node cucumberHtmlReporter.js"
+  },
+  "author": "Kamil Oleksiuk",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^5.1.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "cypress-localstorage-commands": "^1.2.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "./cypress/support/step_definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json"
+    }
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.0"
+  }
+}
